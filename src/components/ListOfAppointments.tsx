@@ -13,6 +13,7 @@ export default function ListOfAppointments() {
   const sortedAppointments = (() => {
     return appointments.toSorted((a, b) => {
       const dateA = a.date ?? "";
+      //usa a.date si no es undefined o null, si lo es usa ""
       const dateB = b.date ?? "";
       const timeA = a.time ?? "";
       const timeB = a.time ?? "";

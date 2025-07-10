@@ -4,8 +4,9 @@ import { persist } from "zustand/middleware";
 
 interface AppointmentStore {
   appointment: Appointments[];
+  //esto es para indicar que esta funcion espera un objeto de appointment con la forma de la interfaz Appointments
   saveAppointment: (appointment: Appointments) => void;
-  deleteAppointment: (appointment: { id: string }) => void;
+  deleteAppointment: (id: string) => void;
 }
 
 export const useAppointmentStore = create<AppointmentStore>()(
@@ -17,7 +18,7 @@ export const useAppointmentStore = create<AppointmentStore>()(
           appointment: [...state.appointment, appointment],
         }));
       },
-      deleteAppointment: ({ id }) => {
+      deleteAppointment: (id) => {
         set((state) => ({
           appointment: state.appointment.filter((item) => item.id !== id),
         }));

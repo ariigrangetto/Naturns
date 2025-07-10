@@ -1,6 +1,7 @@
 import { useId, useState } from "react";
 import { useAppointmentStore } from "../Store/useAppointmentStore";
 import type { Appointments } from "../types.d";
+import { MousePointerClick } from "lucide-react";
 
 /* eslint-disable react/react-in-jsx-scope */
 export default function Turnos() {
@@ -40,8 +41,15 @@ export default function Turnos() {
   };
   return (
     <>
-      <h1>Appointment scheduler:</h1>
-      <button onClick={toggleForm}>New appoiment</button>
+      <button
+        onClick={toggleForm}
+        className='bg-purple-200 py-2 px-5 mt-5 rounded-[100px] font-medium text-black hover:bg-purple-300 transition-all ease-in  '
+      >
+        <p className='justify-center item-center flex'>
+          New appointment
+          <MousePointerClick className='ml-1' />
+        </p>
+      </button>
       {showForm && (
         <>
           <form onSubmit={handleSubmit}>

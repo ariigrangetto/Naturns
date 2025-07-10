@@ -12,7 +12,7 @@ export function InfoAppointments({ appointments }: InfoAppointmentsPros) {
   );
 
   const handleDelete = (id: string) => {
-    deleteAppointment({ id });
+    deleteAppointment(id);
   };
   return (
     <ul>
