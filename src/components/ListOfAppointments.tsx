@@ -1,10 +1,17 @@
 /* eslint-disable react/react-in-jsx-scope */
 
+import { Frown } from "lucide-react";
 import { useAppointmentStore } from "../Store/useAppointmentStore";
 import { InfoAppointments } from "./InfoAppointmenst";
 
 export function WithoutAppointments() {
-  return <p>Not pending appointments found</p>;
+  return (
+    <div className='flex justify-center m-auto'>
+      <p className='mt-5 justify-center m-auto items-center text-center flex'>
+        Not pending appointments found <Frown className='ml-2' />
+      </p>
+    </div>
+  );
 }
 
 export default function ListOfAppointments() {
