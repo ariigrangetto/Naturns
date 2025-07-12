@@ -8,7 +8,7 @@ function App() {
     <>
       <header>
         <img
-          src='src\assets\icon.png'
+          src='public\icon.png'
           alt='APP ICON'
           className='h-[120px] flex justify-center m-auto rounded-3xl mb-2'
         />
