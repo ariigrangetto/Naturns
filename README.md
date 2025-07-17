@@ -7,17 +7,15 @@ Appointment app designed to manage bookings in an organized way. It allows you t
 - `React`
 - `Typescript`
 - `Tailwind`
-- `useReducer`
-- `useContext`
-
+- `Zustand`
 - `useId`
-- `useQuery`
 - `Custom Hooks`
-- `React Router`
+
 
 ## 🧠 The Process
-
-
+I've created this app inspired by my mom's job, aiming to simplify the organization of her appointments, not just by day, but also by time.
+It allows users to describe the specific task to be done, depending on the section: Hair or Nails.
+I implemented TypeScript for type safety and Tailwind CSS for a user-friendly design. I also built it using Zustand to handle actions like adding or deleting appointments.
 
 
 ## 🌆 Preview
