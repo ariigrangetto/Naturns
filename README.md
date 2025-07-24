@@ -1,3 +1,4 @@
+
 # 🛒 Naturns
 
 Appointment app designed to manage bookings in an organized way. It allows you to add new appointments with client information and a service section (for example, nails or hairdressing). Appointments are automatically sorted by date and time.
@@ -19,3 +20,4 @@ I implemented TypeScript for type safety and Tailwind CSS for a user-friendly de
 
 
 ## 🌆 Preview
+<img width="1920" height="1440" alt="naturnsPhoto" src="https://github.com/user-attachments/assets/882ebaf6-4cce-42b3-9004-48964fe3e04c" />
