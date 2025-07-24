@@ -11,6 +11,7 @@ Appointment app designed to manage bookings in an organized way. It allows you t
 - `Zustand`
 - `useId`
 - `Custom Hooks`
+- `Framer motions`
 
 
 ## 🧠 The Process
